@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: 'b32e5309-63ff-4636-b8ef-f3cf539841b0'
   imageRepository: 'jeaustinrdzdockerpush'
   containerRegistry: 'jeaustintest.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '**/azp-agent-windows.dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
