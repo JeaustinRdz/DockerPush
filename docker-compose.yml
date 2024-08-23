@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  azp-agent-windows:
+    image: azp-agent:windows
+    environment:
+      - AZP_URL=https://dev.azure.com/v-jeaustinro
+      - AZP_TOKEN=xlmyx2oz4f7ljdr7yjhq4dy64mjiqsjp6e67qi26u6llfrid3h4a
+      - AZP_POOL=Default
+      - AZP_AGENT_NAME=Docker Agent - Windows
+    deploy:
+      replicas: 2
